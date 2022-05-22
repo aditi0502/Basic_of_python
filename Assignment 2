@@ -1,0 +1,233 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNXXiyNsz4KZwHFVZcAz6wG",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/aditi0502/Basic_of_python/blob/main/Assignment%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "xyQlSXhS42U2"
+      },
+      "outputs": [],
+      "source": [
+        "Name=\"Aditi Shamkant Gatkal\"\n",
+        "Roll_No=9183"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q1. Write a Python User Define Function to reverse a string."
+      ],
+      "metadata": {
+        "id": "Jv42_-pM5HEh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def rev(Inp):\n",
+        " ReverseInp=Inp[::-1] \n",
+        " print (\"The Reversed String is\",ReverseInp) # Print the reversed string\n",
+        "\n",
+        "Stri=input(\"Enter the String to be Reversed \") # Input From the User\n",
+        "rev(Stri)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KdXQzxcA6wAy",
+        "outputId": "8f62baac-46b7-4b25-945d-02d2d99b6ac1"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the String to be Reversed Population\n",
+            "The Reversed String is noitalupoP\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q2. Write a Python min_max function which will return Min, Max of 4 inputs from the user."
+      ],
+      "metadata": {
+        "id": "ftk-egd-6-O5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def min_max(A,B,C,D):\n",
+        "  print(\"The Maxmimum value from the input values is: \", max(A,B,C,D))\n",
+        "  print(\"The Minimum value from the input values is: \", min(A,B,C,D))\n",
+        "  \n",
+        "M,N,O,P = input(\"Enter four values to find minimum and maximum value separated by space: \").split()\n",
+        "min_max(M,N,O,P)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fPpLmKny8g5d",
+        "outputId": "bde668ee-61f0-4118-edaa-15ce13e018b5"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter four values to find minimum and maximum value separated by space: 2 4 8 5\n",
+            "The Maxmimum value from the input values is:  8\n",
+            "The Minimum value from the input values is:  2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q3. Write a Python function to sum 4 inputs from the user."
+      ],
+      "metadata": {
+        "id": "YToRj16t8186"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def Sum4(P,Q,R,S):\n",
+        "  sum = P+Q+R+S\n",
+        "  print(\"The Sum of the input vlaues is: \", sum)\n",
+        "\n",
+        "a,b,c,d= list(map(float, input(\"Enter four values to find sum of them separated by space: \").split()))\n",
+        "Sum4 (a,b,c,d)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cw5y6HIe9urH",
+        "outputId": "78255acb-3911-4aba-b244-7be78a31acd4"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter four values to find sum of them separated by space: 4 5 8 9\n",
+            "The Sum of the input vlaues is:  26.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q4. Find out the Command which will return you number of local variables from the user define function."
+      ],
+      "metadata": {
+        "id": "ALWhnFvz95oa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"The Number of Local Variables in the given User Defined Function is: \" ,Sum4.__code__.co_nlocals)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iKDA-rc-96pk",
+        "outputId": "d03b4e24-6779-4120-c1c7-a260f291feba"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The Number of Local Variables in the given User Defined Function is:  5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Q5.Write Python Function to get even number from the list. List len must be equal to 8."
+      ],
+      "metadata": {
+        "id": "UsUw0kiD-Dy1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1 = list(map(float, input(\"Enter a list of 8 elements separated by space: \").split()))\n",
+        "L = len(list1)\n",
+        "if (L==8):\n",
+        "    print(\"The Even Numbers are : \")\n",
+        "    for num in list1:\n",
+        "  \n",
+        "        if (num % 2 == 0):\n",
+        "            print(num, end=\" \")\n",
+        "else: \n",
+        "    print(\"There are less than 8 elements in the list\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ta-wo_n1-Ezq",
+        "outputId": "d01a3663-c24b-4e3c-ce8f-fbb7b39e6953"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a list of 8 elements separated by space: 1 2 5 8 6 4 7 3\n",
+            "The Even Numbers are : \n",
+            "2.0 8.0 6.0 4.0 "
+          ]
+        }
+      ]
+    }
+  ]
+}
